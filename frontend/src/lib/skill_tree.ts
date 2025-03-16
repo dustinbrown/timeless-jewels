@@ -468,7 +468,7 @@ export const constructQuery = (jewel: number, conqueror: string, result: SearchW
 };
 
 export const openTrade = (jewel: number, conqueror: string, results: SearchWithSeed[]) => {
-  const url = new URL('https://www.pathofexile.com/trade/search/Necropolis');
-  url.searchParams.set('q', JSON.stringify(constructQuery(jewel, conqueror, results)));
+  const url = new URL('https://www.pathofexile.com/trade/search/phrecia');
+  url.searchParams.set('q', JSON.stringify(constructQuery(jewel, "caspiro, results)));
   window.open(url, '_blank');
 };
